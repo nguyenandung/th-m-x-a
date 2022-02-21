@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm sửa xóa</title>
+</head>
+<body>
+    <table>
+        
+            <tr>
+                <td>ID</td>
+                <td colspan="3"><input type="number" id="id"></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td colspan="3"> <input type="text" id="name"></td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td colspan="3"> <input type="text" id="email"></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td colspan="3"> <input type="number" id="phone"></td>
+            </tr>
+
+           
+        
+    </table>   
+    
+    <button onclick="addData()" id="addbtn">Add</button>
+    <button onclick="editData()" ìd="editbtn">Edit</button>
+    <button onclick="deleteData()" id="deletebtn">Delete</button>
+    <button onclick="viewData()" id="viewbtn">View</button>
+    <button onclick="search()" id="searchbtn">Search</button>
+    <button onclick="refresh()" id="refreshbtn">Refresh</button>
+
+    <div id="database">
+
+    </div>
+
+<table border="1" cellpadding="5">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+</table>
+
+    <script src="main.js">
+
+    </script>
+</body>
+</html>
